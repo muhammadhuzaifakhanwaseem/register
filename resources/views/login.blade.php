@@ -5,23 +5,32 @@
     <div class="row align-items-center" style="height: 100vh;">
         <div class="col-md-12 w-100-1100 my-3">
             <div class="sec-5-form" id="sec-5-form">
-                <form class="sec-5-form" action="https://theproviderssolutions.com/contactformsubmit" method="POST">
+                <form action="{{route('admin.login.store')}}" class="sec-5-form"  method="POST">
+
+                    @csrf
 
                     <div class="box"></div>
-                        <input type="hidden" name="_token" value="KQCswTWgUXOeEokNLhbYL7pI89sc73TwgKGsxPog">
-                        <div class="row">
-                            <h2 class=" fw-bold fw-bold">Login: The Providers Solution Courses</h2>
-                            <div class="col-md-12 my-4">
-                                <input class="px-3" placeholder="Enter Your Email" required="" type="text"
-                                    name="lname" value="">
-                            </div>
-                            <div class="col-md-12 my-4">
-                                <input class="px-3" placeholder="Enter Your Password" required="" type="text"
-                                    name="lname" value="">
-                            </div>
 
+                        <div class="row justify-content-center">
+                            <h2 class="display-4 fw-bold fw-bold">Login</h2>
+                            <p>The Providers Solutions Courses</p>
+                            <div class="col-md-12 my-3">
+                                <input class="px-3" required="" placeholder="Enter Your Email" type="text"
+                                    name="email" value="">
+                            </div>
+                            <div class="col-md-12 my-3">
+                    <input type="password" class="px-3" required="" placeholder="Enter Your Password" 
+                                    name="password" value="">
+                            </div>
+                           
+                            <div class="col-12">
+                                <button type="submit" class="sec-5-sub btn-sm">Login</button>
+                            </div>
                         </div>
-                        <button type="submit" class="sec-5-sub">Login</button>
+                        <br>
+                        @if (session()->has('status'))
+                            <div class="alert alert-danger ">{{session()->get('status')}}</div>
+                        @endif
                     </form>
 
                 </div>

@@ -277,6 +277,7 @@
 }
     </style>
 @section('homeContent')
+
 <center class="wrapper">
     <table class="top-panel center" width="602" border="0" cellspacing="0" cellpadding="0">
         <tbody>
@@ -376,4 +377,5 @@
         </tbody>
     </table>
 </center>
+
 @endsection

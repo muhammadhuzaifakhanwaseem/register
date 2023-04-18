@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-
+    <link rel="icon" href="https://theproviderssolutions.com/public/assets/icons/Favicon.png" type="image/x-icon">
     <title>Courses | The Providers Solutions</title>
 </head>
 <body>
@@ -52,10 +52,31 @@
                 </ul>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="{{url('uploadvoucher')}}">Upload Fee Voucher</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="/">Contact</a>
               </li>
-            </ul>
-    <a href="/login"><button class="btn btn-outline-warning">Login / Register</button></a>
+           
+              <div class="pb-0" style="position: absolute; right:30px;">
+
+                @if (session()->has('email'))
+
+                <li class="nav-item dropdown text-white  ">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{session()->get('email')}} 
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{route('admin.logout')}}">Logout</a></li>
+                     </ul>
+                </li>
+                  
+                  @else
+                  <a href="{{Route('admin.login')}}"><button class="btn btn-outline-warning">Login / Register</button></a>
+                  
+                  @endif
+                </div>
+              </ul>
           </div>
         </div>
       </nav>

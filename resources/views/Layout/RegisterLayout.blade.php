@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
+    <link rel="icon" href="https://theproviderssolutions.com/public/assets/icons/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <style>
         * {
@@ -13,29 +14,7 @@
             /* overflow-x:  hidden !important; */
         }
 
-        .box::before {
-            content: '';
-            width: 500px;
-            height: 500px;
-            background: linear-gradient(#0079FD, #ffffff00);
-            position: fixed;
-            top: -13%;
-            left: -5%;
-            border-radius: 100%;
-            z-index: -1;
-        }
-
-        .box::after {
-            content: '';
-            width: 500px;
-            height: 500px;
-            background: linear-gradient(#007afda7, #ffffff00);
-            position: fixed;
-            bottom: -18%;
-            right: -2%;
-            border-radius: 100%;
-            z-index: -1;
-        }
+       
 
         .sec-5-form {
             background-color: #e7f3ff96;
@@ -134,24 +113,7 @@
             color: white;
         }
 
-        @media screen and (max-width: 800px) {
-            .sec-5-form {
-                padding: 10px;
-            }
-            .box::before {
-            content: '';
-            width: 0px;
-            height: 0px;
-            background: linear-gradient(#007afd00, #ffffff00);
-        }
-
-        .box::after {
-            content: '';
-            width: 0px;
-            height: 0px;
-            background: linear-gradient(#007afd00, #ffffff00);
-        }
-        }
+       
     </style>
 </head>
 

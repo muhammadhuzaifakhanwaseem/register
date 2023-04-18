@@ -88,6 +88,9 @@
         font-weight: bold;
         color: white;
     }
+    .CodeMirror-scroll{
+        min-height: 100px !important;
+    }
 
     @media screen and (max-width: 800px) {
         .sec-5-form {
@@ -152,8 +155,10 @@
                                 <textarea placeholder="Enter Your Massage Here...." class="" name="message" required="">The Old Massage From Huzaifa
                                 </textarea>
                             </div>
+                            <div class="col-12 mt-5 pt-3">
+                                <button type="submit" class="btn btn-outline-dark mt-4">Update User</button>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-outline-dark mt-4">Update User</button>
                     </form>
 
                 </div>
