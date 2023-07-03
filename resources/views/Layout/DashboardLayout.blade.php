@@ -53,9 +53,9 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="d-flex">
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-white dashside bg-dark">
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-white dashside bg-dark" style="overflow: auto;">
                 <a href="{{ url('/') }}"
                     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <span class="">TPS Course Dashboard</span>
@@ -75,37 +75,74 @@
                     </li>
                     <li>
                         <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white"
-                                class="bi bi-people me-3 " viewBox="0 0 16 16">
-                                <path
-                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-                            </svg>
-                            Users List
+                            
+                            Course List
+                        </a>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Course Add 
                         </a>
                     </li>
-                    {{-- <li>
-                        <a href="{{ url('/uploadvoucher') }}" class="nav-link d-flex align-items-center text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white"
-                                class=" me-3 bi bi-file-earmark-diff-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM8 6a.5.5 0 0 1 .5.5V8H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V9H6a.5.5 0 0 1 0-1h1.5V6.5A.5.5 0 0 1 8 6zm-2.5 6.5A.5.5 0 0 1 6 12h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" />
-                            </svg>
-                            Upload Voucher
-                        </a>
-                    </li> --}}
                     <li>
-                        <a href="{{ url('/composeemail') }}" class="nav-link d-flex align-items-center text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                class="me-3 bi bi-envelope" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                            </svg>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Student List
+                        </a>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Student Add 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Qualification List
+                        </a>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Qualification Add 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Enrollment List
+                        </a>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Enrollment Add 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Announcment List
+                        </a>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Announcment Add 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/composeemail') }}" class="nav-link d-flex align-items-center text-white">  
                             Compose Email
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Youtube Course List
+                        </a>
+                        <a href="{{ url('/userslist') }}" class="nav-link d-flex align-items-center text-white">
+                            
+                            Youtube Course Add 
+                        </a>
+                    </li>
                 </ul>
+                
+                <br><br>
                 <hr>
-                <div class="dropdown">
+                <div class="dropdown fixed-bottom py-3 bg-primary " style="width: 285px;">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                         id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://avatars.githubusercontent.com/u/107119176?v=4" alt="" width="32"

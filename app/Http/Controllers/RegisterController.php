@@ -9,9 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class RegisterController extends Controller
 {
-    public function register(){
-        return view('register');
-    }
+   
     public function login(){
 
         if(session()->has('email')){
@@ -67,6 +65,10 @@ class RegisterController extends Controller
         return redirect()->route('admin.login');
     }
 
+    public function register(){
+        return view('register');
+    }
+    
     public function registerstore(Request $req){
 
         $req->validate([

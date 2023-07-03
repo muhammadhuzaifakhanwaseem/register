@@ -12,6 +12,15 @@ class DashboardController extends Controller
     public function dashboard(){
         return view('dashboard');
     }
+
+    public function student(){
+        
+       $users  =  Db::select('select * from register');
+
+        return view('students.index',['users' => $users]);
+    }
+
+
     public function composeemail(){
         return view('compose_email');
     }
